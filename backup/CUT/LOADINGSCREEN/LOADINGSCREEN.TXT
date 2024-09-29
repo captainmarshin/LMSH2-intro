@@ -1,0 +1,1247 @@
+cutscene_start
+	dir "LoadingScreen\Loading_Screen_Default"
+	file "Loading_Screen_Default"
+	level "Loading_Screen_Default"
+
+	// Common Objects
+	FindCommonObject "Cut_ForeverCrystal_Two"//Temp asset Delete me when final asset is in!!
+
+	//Audio
+
+	// Cutscene Flags
+	level_intro
+	looping
+	disable_borders
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screen_Startup"
+	file "Loading_Screen_Startup"
+	level "Loading_Screen_Startup"
+	level_intro
+	earlystart
+	unskippable
+	
+	// Common Objects
+	//FindCommonObject "Layout_Assets/LAYOUT_TempCutscene"//Delete me when final cutscene or layouts are in!!
+	FindCommonObject "CUT_LEGOSplashLogo"
+	FindCommonObject "CUT_MARVELSplashLogo"
+	FindCommonObject "CUT_TTSplashLogo"
+	FindCommonObject "CUT_WBSplashLogo"
+	//FindCommonObject "CUT_RocketParticles" //removed to be replaced by vfx trails for now
+
+	//Audio
+	AudioTrack "CS_Atlas_Logo_Ident"
+
+	// Cutscene Flags
+	dont_draw_special "CUT_Asteroids_1" 
+	dont_draw_special "CUT_Asteroids_2" 
+	dont_draw_special "CUT_Asteroids_3" 
+	dont_draw_special "CUT_Asteroids_4" 
+	dont_draw_special "CUT_Asteroids_5" 
+	dont_draw_special "CUT_Asteroids_6" 
+	dont_draw_special "CUT_Asteroids_7" 
+	dont_draw_special "CUT_Asteroids_8" 
+	dont_draw_special "CUT_Asteroids_9" 
+	dont_draw_special "CUT_Asteroids_10" 		
+	dont_draw_special "CUT_Asteroids_11" 		
+	dont_draw_special "CUT_Asteroids_12" 	
+
+	fade_at_end 1.0 rgb 255 255 255 hold_after_cutscene
+	
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 7000
+	nearclip 0.1
+
+	//EDL
+	EDL 1 429
+	EDL 435 797
+	EDL 806 1011
+	EDL 1026 1287	
+
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screen_GwenPool"
+	file "Loading_Screen_GwenPool"
+	level "LoadingScreen_GwenPool_HUB"
+	level_intro
+	looping
+	unskippable
+	
+	// Common Objects
+	//FindCommonObject "Layout_Assets/LAYOUT_Loading"//Delete me when final cutscene or layouts are in!!
+	FindCommonObject "CUT_VacuumCleaner"
+	FindCommonObject "CUT_ComicBooks"
+	FindCommonObject "CUT_TeddyBear"
+	FindCommonObject "CUT_CoffeeCup"
+	FindCommonObject "CUT_CupofTea"
+	//FindCommonObject "CUT_Doughnut"
+	//FindCommonObject "CUT_LargeBox"
+	FindCommonObject "CUT_Box"
+	//FindCommonObject "CUT_NachoBowl"
+	//FindCommonObject "CUT_Hydra_Milkshake"
+	FindCommonObject "CUT_TVStatic"
+	FindCommonObject "..\Chars\Misc\Items\Gwenpool_Hammer"
+	//FindCommonObject "..\Chars\Misc\Items\Gwenpool_GrappleGun"
+	//FindCommonObject "..\Chars\Misc\Items\Gwenpool_Mine"
+	//FindCommonObject "..\Chars\Misc\Items\Gwenpool_Phone"
+	//FindCommonObject "..\Chars\Misc\Items\Gwenpool_Pistol"
+	FindCommonObject "..\Chars\Misc\Items\Gwenpool_Sword"
+	//FindCommonObject "..\Chars\Misc\Items\Gwenpool_GrappleGun"
+	FindCommonObject "..\Chars\Misc\Items\Gwenpool_Parasol"
+	FindCommonObject "..\Chars\Misc\Items\HowardTheDuck_BFG"
+	FindCommonObject "..\Chars\Misc\Items\HowardTheDuck_Guitar"
+	FindCommonObject "..\Chars\Misc\Items\Goon_WeaponHalberd"
+	FindCommonObject "CUT_ComicBooks"
+	
+	dont_draw_special "CUT_Comics"
+	
+
+	//Audio
+         AudioTrack "CS_Loading_Screen_GwenPool_SFX"
+
+	// Cutscene Flags
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 7000
+	nearclip 0.1
+
+	//EDL
+
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_01"
+	level "Loading_Screen01"
+	level_intro
+	
+	loaded_dialogue_skippable
+
+	// Common Objects
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "CUT_JJJameson_Desk"
+	FindCommonObject "CUT_PlayingCards"
+	FindCommonObject "CUT_Sandwich"
+	FindCommonObject "CUT_DailyBugle"
+	FindCommonObject "CUT_SpiderManPhotos"
+	FindCommonObject "EnvCo/CUT_Loading_TV_Frame"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+	AudioTrack "CS_Loading_Screen_01_SFX"
+	DialogueTrack "CS_Loading_Screen_01_DX"
+
+	// Cutscene Flags
+	next_playcutscene "Loading_Screen_01_loop"
+	//borders_fraction 0.5
+	aspectratio 16.0:9.0
+	aspectratio 16.0:9.0
+
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_01_loop"
+	level "Loading_Screen01"
+
+	// Common Objects
+	FindCommonObject "EnvCo/CUT_TV_TestCard"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+
+	// Cutscene Flags
+	looping
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_02"
+	level "Loading_Screen02"
+	level_intro
+	loaded_dialogue_skippable
+	
+	// Common Objects
+	FindCommonObject "CUT_JJJameson_Desk"
+	FindCommonObject "CUT_PlayingCards"
+	FindCommonObject "CUT_Sandwich"
+	FindCommonObject "CUT_DailyBugle"
+	FindCommonObject "CUT_SpiderManPhotos"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "EnvCo/CUT_Loading_TV_Frame"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+	AudioTrack "CS_Loading_Screen_02_SFX"
+	DialogueTrack "CS_Loading_Screen_02_DX"
+
+	// Cutscene Flags
+	next_playcutscene "Loading_Screen_02_loop"
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_02_loop"
+	level "Loading_Screen02"
+
+	// Common Objects
+	FindCommonObject "EnvCo/CUT_TV_TestCard"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+
+	// Cutscene Flags
+	looping
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_03"
+	level "Loading_Screen03"
+	level_intro
+	loaded_dialogue_skippable
+	
+	// Common Objects
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "CUT_JJJameson_Desk"
+	FindCommonObject "CUT_JJ_Jameson_Notes"
+	FindCommonObject "CUT_TeaStud"
+	FindCommonObject "EnvCo/CUT_Loading_TV_Frame"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+	AudioTrack "CS_Loading_Screen_03_SFX"
+	DialogueTrack "CS_Loading_Screen_03_DX"
+
+	// Cutscene Flags
+	next_playcutscene "Loading_Screen_03_loop"
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_03_loop"
+	level "Loading_Screen03"
+
+	// Common Objects
+	FindCommonObject "EnvCo/CUT_TV_TestCard"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+
+	// Cutscene Flags
+	looping
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_04"
+	level "Loading_Screen04"
+	level_intro
+	loaded_dialogue_skippable
+	
+	// Common Objects
+	FindCommonObject "CUT_JJJameson_Desk"
+	FindCommonObject "CUT_Sandwich"
+	FindCommonObject "CUT_PlayingCards"
+	FindCommonObject "CUT_DailyBugle"
+	FindCommonObject "CUT_SpiderManPhotos"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "EnvCo/CUT_Loading_TV_Frame"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+	AudioTrack "CS_Loading_Screen_04_SFX"
+	DialogueTrack "CS_Loading_Screen_04_DX"
+
+	// Cutscene Flags
+	next_playcutscene "Loading_Screen_04_loop"
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_04_loop"
+	level "Loading_Screen04"
+
+	// Common Objects
+	FindCommonObject "EnvCo/CUT_TV_TestCard"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+
+	// Cutscene Flags
+	looping
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_05"
+	level "Loading_Screen05"
+	level_intro
+	loaded_dialogue_skippable
+	
+	// Common Objects
+	FindCommonObject "CUT_JJJameson_Desk"
+	FindCommonObject "CUT_SoL_Doll"
+	FindCommonObject "CUT_Pen"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "EnvCo/CUT_Loading_TV_Frame"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+	AudioTrack "CS_Loading_Screen_05_SFX"
+	DialogueTrack "CS_Loading_Screen_05_DX"
+
+	// Cutscene Flags
+	next_playcutscene "Loading_Screen_05_loop"
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_05_loop"
+	level "Loading_Screen05"
+
+	// Common Objects
+	FindCommonObject "EnvCo/CUT_TV_TestCard"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+
+	// Cutscene Flags
+	looping
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_06"
+	level "Loading_Screen06"
+	level_intro
+	loaded_dialogue_skippable
+	
+	// Common Objects
+	FindCommonObject "CUT_JJJameson_Desk"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "CUT_JJ_Jameson_Notes"
+	FindCommonObject "EnvCo/CUT_Loading_TV_Frame"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+	AudioTrack "CS_Loading_Screen_06_SFX"
+	DialogueTrack "CS_Loading_Screen_06_DX"
+
+	// Cutscene Flags
+	next_playcutscene "Loading_Screen_06_loop"
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_06_loop"
+	level "Loading_Screen06"
+
+	// Common Objects
+	FindCommonObject "EnvCo/CUT_TV_TestCard"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+
+	// Cutscene Flags
+	looping
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_07"
+	level "Loading_Screen07"
+	level_intro
+	loaded_dialogue_skippable
+	
+	// Common Objects
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "CUT_JJJameson_Desk"
+	FindCommonObject "CUT_Spear"
+	FindCommonObject "CUT_food"
+	FindCommonObject "CUT_BlackStud"
+	FindCommonObject "CUT_SnowStuds"
+	FindCommonObject "CUT_TeaStud"
+	FindCommonObject "EnvCo/CUT_Loading_TV_Frame"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+	AudioTrack "CS_Loading_Screen_07_SFX"
+	DialogueTrack "CS_Loading_Screen_07_DX"
+
+	// Cutscene Flags
+	next_playcutscene "Loading_Screen_07_loop"
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_07_loop"
+	level "Loading_Screen07"
+
+	// Common Objects
+	FindCommonObject "EnvCo/CUT_TV_TestCard"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+
+	// Cutscene Flags
+	looping
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_08"
+	level "Loading_Screen08"
+	level_intro
+	loaded_dialogue_skippable
+	
+	// Common Objects
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "CUT_DailyBugle"
+	FindCommonObject "CUT_SpiderManPhotos"	
+	FindCommonObject "CUT_JJJameson_Desk"
+	FindCommonObject "CUT_TeaStud"
+	FindCommonObject "CUT_Sandwich"
+	FindCommonObject "EnvCo/CUT_Loading_TV_Frame"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+	
+	//Audio
+	AudioTrack "CS_Loading_Screen_08_SFX"
+	DialogueTrack "CS_Loading_Screen_08_DX"
+
+	// Cutscene Flags
+	next_playcutscene "Loading_Screen_08_loop"
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_08_loop"
+	level "Loading_Screen08"
+
+	// Common Objects
+	FindCommonObject "EnvCo/CUT_TV_TestCard"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+
+	// Cutscene Flags
+	looping
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_09"
+	level "Loading_Screen09"
+	level_intro
+	loaded_dialogue_skippable
+	
+	// Common Objects
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "CUT_JJJameson_Desk"
+	FindCommonObject "CUT_JJ_Jameson_Notes"
+	FindCommonObject "CUT_DailyBugle"
+	FindCommonObject "CUT_Sandwich"
+	FindCommonObject "EnvCo/CUT_Loading_TV_Frame"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+	AudioTrack "CS_Loading_Screen_09_SFX"
+	DialogueTrack "CS_Loading_Screen_09_DX"
+
+	// Cutscene Flags
+	next_playcutscene "Loading_Screen_09_loop"
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_09_loop"
+	level "Loading_Screen09"
+
+	// Common Objects
+	FindCommonObject "EnvCo/CUT_TV_TestCard"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+
+	// Cutscene Flags
+	looping
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_10"
+	level "Loading_Screen10"
+	level_intro
+	loaded_dialogue_skippable
+	
+	// Common Objects
+	FindCommonObject "CUT_JJJameson_Desk"
+	FindCommonObject "CUT_PlayingCards"
+	FindCommonObject "CUT_Sandwich"
+	FindCommonObject "CUT_DailyBugle"
+	FindCommonObject "CUT_SpiderManPhotos"
+	FindCommonObject "CUT_CoffeeCup"
+	FindCommonObject "CUT_SpidermanDoll"
+	FindCommonObject "CUT_TeaStud"
+	FindCommonObject "EnvCo/CUT_TV_TestCard"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "EnvCo/CUT_Loading_TV_Frame"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+	AudioTrack "CS_Loading_Screen_10_SFX"
+	DialogueTrack "CS_Loading_Screen_10_DX"
+
+	// Cutscene Flags
+	next_playcutscene "Loading_Screen_10_loop"
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_10_loop"
+	level "Loading_Screen10"
+
+	// Common Objects
+	FindCommonObject "EnvCo/CUT_TV_TestCard"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+
+	// Cutscene Flags
+	looping
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_11"
+	level "Loading_Screen11"
+	level_intro
+	loaded_dialogue_skippable
+	
+	// Common Objects
+	FindCommonObject "CUT_JJJameson_Desk"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "CUT_Sandwich"
+	FindCommonObject "CUT_SpiderManPhotos"
+	FindCommonObject "EnvCo/CUT_Loading_TV_Frame"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+	AudioTrack "CS_Loading_Screen_11_SFX"
+	DialogueTrack "CS_Loading_Screen_11_DX"
+
+	// Cutscene Flags
+	next_playcutscene "Loading_Screen_11_loop"
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_11_loop"
+	level "Loading_Screen11"
+
+	// Common Objects
+	FindCommonObject "EnvCo/CUT_TV_TestCard"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+
+	// Cutscene Flags
+	looping
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_12"
+	level "Loading_Screen12"
+	level_intro
+	loaded_dialogue_skippable
+
+	// Common Objects
+	FindCommonObject "CUT_JJJameson_Desk"
+	FindCommonObject "CUT_PlayingCards"
+	FindCommonObject "CUT_Sandwich"
+	FindCommonObject "CUT_DailyBugle"
+	FindCommonObject "CUT_SpiderManPhotos"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "EnvCo/CUT_Loading_TV_Frame"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+	AudioTrack "CS_Loading_Screen_12_SFX"
+	DialogueTrack "CS_Loading_Screen_12_DX"
+
+	// Cutscene Flags
+	next_playcutscene "Loading_Screen_12_loop"
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_12_loop"
+	level "Loading_Screen12"
+
+	// Common Objects
+	FindCommonObject "EnvCo/CUT_TV_TestCard"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+
+	// Cutscene Flags
+	looping
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_13"
+	level "Loading_Screen13"
+	level_intro
+	loaded_dialogue_skippable
+
+	// Common Objects
+	FindCommonObject "CUT_JJJameson_Desk"
+	FindCommonObject "CUT_PlayingCards"
+	FindCommonObject "CUT_Sandwich"
+	FindCommonObject "CUT_DailyBugle"
+	FindCommonObject "CUT_SpiderManPhotos"
+	FindCommonObject "CUT_KIDCOLTHAT"
+	FindCommonObject "CUT_TEASTUD"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "EnvCo/CUT_Loading_TV_Frame"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+	AudioTrack "CS_Loading_Screen_13_SFX"
+	DialogueTrack "CS_Loading_Screen_13_DX"
+
+	// Cutscene Flags
+	next_playcutscene "Loading_Screen_13_loop"
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_13_loop"
+	level "Loading_Screen13"
+
+	// Common Objects
+	FindCommonObject "EnvCo/CUT_TV_TestCard"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+
+	// Cutscene Flags
+	looping
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_14"
+	level "Loading_Screen14"
+	level_intro
+	loaded_dialogue_skippable
+
+	// Common Objects
+	FindCommonObject "CUT_JJJameson_Desk"
+	FindCommonObject "CUT_PlayingCards"
+	FindCommonObject "CUT_Sandwich"
+	FindCommonObject "CUT_DailyBugle"
+	FindCommonObject "CUT_SpiderManPhotos"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "EnvCo/CUT_Loading_TV_Frame"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+	AudioTrack "CS_Loading_Screen_14_SFX"
+	DialogueTrack "CS_Loading_Screen_14_DX"
+
+	// Cutscene Flags
+	next_playcutscene "Loading_Screen_14_loop"
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_14_loop"
+	level "Loading_Screen14"
+
+	// Common Objects
+	FindCommonObject "EnvCo/CUT_TV_TestCard"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+
+	// Cutscene Flags
+	looping
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_15"
+	level "Loading_Screen15"
+	level_intro
+	loaded_dialogue_skippable
+
+	// Common Objects
+	FindCommonObject "CUT_JJJameson_Desk"
+	FindCommonObject "CUT_Food"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "CUT_Doughnut"
+	FindCommonObject "CUT_Binoculars"
+	FindCommonObject "CUT_TeaStud"
+	FindCommonObject "CUT_Pen"
+	FindCommonObject "EnvCo/CUT_Loading_TV_Frame"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+	AudioTrack "CS_Loading_Screen_15_SFX"
+	DialogueTrack "CS_Loading_Screen_15_DX"
+	
+	// Cutscene Flags
+	next_playcutscene "Loading_Screen_15_loop"
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_15_loop"
+	level "Loading_Screen15"
+
+	// Common Objects
+	FindCommonObject "EnvCo/CUT_TV_TestCard"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+
+	// Cutscene Flags
+	looping
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_16"
+	level "Loading_Screen16"
+	level_intro
+	loaded_dialogue_skippable
+	
+	// Common Objects
+	FindCommonObject "CUT_JJJameson_Desk"
+	FindCommonObject "CUT_PlayingCards"
+	FindCommonObject "CUT_Sandwich"
+	FindCommonObject "CUT_DailyBugle"
+	FindCommonObject "CUT_SpiderManPhotos"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "EnvCo/CUT_Loading_TV_Frame"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+	AudioTrack "CS_Loading_Screen_16_SFX"
+	DialogueTrack "CS_Loading_Screen_16_DX"
+
+	// Cutscene Flags
+	next_playcutscene "Loading_Screen_16_loop"
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_16_loop"
+	level "Loading_Screen16"
+
+	// Common Objects
+	FindCommonObject "EnvCo/CUT_TV_TestCard"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+
+	// Cutscene Flags
+	looping
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_17"
+	level "Loading_Screen17"
+	level_intro
+	loaded_dialogue_skippable
+	
+	// Common Objects
+	FindCommonObject "CUT_JJJameson_Desk"
+	FindCommonObject "CUT_PlayingCards"
+	FindCommonObject "CUT_Sandwich"
+	FindCommonObject "CUT_DailyBugle"
+	FindCommonObject "CUT_SpiderManPhotos"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "EnvCo/CUT_Loading_TV_Frame"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+	AudioTrack "CS_Loading_Screen_17_SFX"
+	DialogueTrack "CS_Loading_Screen_17_DX"
+
+	// Cutscene Flags
+	next_playcutscene "Loading_Screen_17_loop"
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_17_loop"
+	level "Loading_Screen17"
+
+	// Common Objects
+	FindCommonObject "EnvCo/CUT_TV_TestCard"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+
+	// Cutscene Flags
+	looping
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_18"
+	level "Loading_Screen18"
+	level_intro
+	loaded_dialogue_skippable
+	
+	// Common Objects
+	FindCommonObject "CUT_JJJameson_Desk"
+	FindCommonObject "CUT_PlayingCards"
+	FindCommonObject "CUT_Sandwich"
+	FindCommonObject "CUT_DailyBugle"
+	FindCommonObject "CUT_SpiderManPhotos"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "EnvCo/CUT_Loading_TV_Frame"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+	AudioTrack "CS_Loading_Screen_18_SFX"
+	DialogueTrack "CS_Loading_Screen_18_DX"
+
+	// Cutscene Flags
+	next_playcutscene "Loading_Screen_18_loop"
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_18_loop"
+	level "Loading_Screen18"
+
+	// Common Objects
+	FindCommonObject "EnvCo/CUT_TV_TestCard"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+
+	// Cutscene Flags
+	looping
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_19"
+	level "Loading_Screen19"
+	level_intro
+	loaded_dialogue_skippable
+	
+	// Common Objects
+	FindCommonObject "CUT_JJJameson_Desk"
+	FindCommonObject "CUT_PlayingCards"
+	FindCommonObject "CUT_Sandwich"
+	FindCommonObject "CUT_DailyBugle"
+	FindCommonObject "CUT_SpiderManPhotos"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "EnvCo/CUT_Loading_TV_Frame"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+	AudioTrack "CS_Loading_Screen_19_SFX"
+	DialogueTrack "CS_Loading_Screen_19_DX"
+
+	// Cutscene Flags
+	next_playcutscene "Loading_Screen_19_loop"
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_19_loop"
+	level "Loading_Screen19"
+
+	// Common Objects
+	FindCommonObject "EnvCo/CUT_TV_TestCard"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+
+	// Cutscene Flags
+	looping
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_20"
+	level "Loading_Screen20"
+	level_intro
+	loaded_dialogue_skippable
+	
+	// Common Objects
+	FindCommonObject "CUT_JJJameson_Desk"
+	FindCommonObject "CUT_PlayingCards"
+	FindCommonObject "CUT_Sandwich"
+	FindCommonObject "CUT_DailyBugle"
+	FindCommonObject "CUT_SpiderManPhotos"
+	FindCommonObject "CUT_TeaStud"
+	FindCommonObject "CUT_GrandmaTile"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "EnvCo/CUT_Loading_TV_Frame"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+	
+	//Audio
+	AudioTrack "CS_Loading_Screen_20_SFX"
+	DialogueTrack "CS_Loading_Screen_20_DX"
+
+	// Cutscene Flags
+	next_playcutscene "Loading_Screen_20_loop"
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screens"
+	file "Loading_Screen_20_loop"
+	level "Loading_Screen20"
+
+	// Common Objects
+	FindCommonObject "EnvCo/CUT_TV_TestCard"
+	FindCommonObject "EnvCo/CUT_TVStatic"
+	FindCommonObject "EnvCo/CUT_LoadingScreen_ScanLine"
+
+	//Audio
+
+	// Cutscene Flags
+	looping
+	aspectratio 16.0:9.0
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
+
+cutscene_start
+	dir "LoadingScreen\Loading_Screen_HUB"
+	file "Loading_Screen_HUB"
+	level "LoadingScreen_HUB"
+
+	// Common Objects
+	//FindCommonObject 
+
+	//Audio
+
+	// Cutscene Flags
+	level_intro
+	looping
+	disable_borders
+
+	camera_blur_exposure 0.5
+	character_blur_exposure 0.5
+
+	farclip 1000
+	nearclip 0.1
+cutscene_end
