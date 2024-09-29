@@ -10,7 +10,7 @@ This mod for **LEGO Marvel Superheroes 2** allows you to skip the game intro.
 
 ## Installation
 
-<details>
+<details open>
 <summary><h3>Game files unpacked:</h3></summary>
 
 If you already unpack game and have access to game files. (You can see folders and files in the game directory)
