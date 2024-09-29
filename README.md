@@ -10,14 +10,17 @@ This mod for **LEGO Marvel Superheroes 2** allows you to skip the game intro.
 
 ## Installation
 
-### Game files unpacked:
+<details>
+<summary><h3>Game files unpacked:</h3></summary>
 
 If you already unpack game and have access to game files. (You can see folders and files in the game directory)
 
-1. Download archive from release page
+1. Download `intro.zip` archive from [release page](https://github.com/captainmarshin/LMSH2-intro/releases/)
 2. Follow the folder structure in the downloaded archive and replace the corresponding files in your game folder
+</details>
 
-### Game files packed:
+<details>
+<summary><h3>Game files packed:</h3></summary>
 
 If you don’t have unpacked files (If you only see __disc_ and .dat files in the game folder)
 
@@ -33,7 +36,7 @@ If you don’t have unpacked files (If you only see __disc_ and .dat files in th
 9. Select folder where place unpacked files (new folder on Desktop is good)
 10. After unpack complete - remove `__disc__` and all `.dat` files from original game folder
 11. Move unpacked files to original game folder
-12. Download archive from release page
+12. Download `intro.zip` archive from [release page](https://github.com/captainmarshin/LMSH2-intro/releases/)
 13. Follow the folder structure in the downloaded archive and replace the corresponding files in your game folder
 
 >💡 Note: Unpacking can be a long process and the unpacked game will be significantly larger (e.g., my game went from 25GB to 32GB after unpacking).
@@ -42,6 +45,7 @@ P.S. For Windows process is same (I unpacked files on Windows), but according to
 
 If you have any trouble, follow this video: [https://www.youtube.com/watch?v=_EQ3hPrh0V8](https://www.youtube.com/watch?v=_EQ3hPrh0V8)
 
+</details>
 
 ## Uninstall
 
